@@ -182,7 +182,7 @@ class StableDiffusionWalkPipeline(DiffusionPipeline):
             EulerAncestralDiscreteScheduler,
             DPMSolverMultistepScheduler,
         ],
-        safety_checker: StableDiffusionSafetyChecker,
+        safety_checker: None,
         feature_extractor: CLIPFeatureExtractor,
         requires_safety_checker: bool = False,
     ):
